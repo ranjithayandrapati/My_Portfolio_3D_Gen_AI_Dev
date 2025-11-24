@@ -74,8 +74,6 @@ Preview the production build locally:
 npm run preview
 ```
 
-## Assets & Credits
-Models and assets used in the project can be found here: https://drive.google.com/drive/folders/1KVU8iaH0E_JFtShNiR3BgCSA3pawXY4Z
 
 ## Contact
 Adapt this portfolio with your own projects, socials, and branding. If you have feedback or want to collaborate, feel free to reach out after forking your copy.
