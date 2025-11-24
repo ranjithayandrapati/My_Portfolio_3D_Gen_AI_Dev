@@ -10,7 +10,11 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  color-scheme: dark;
+}
+
+body {
+  background: #ffffff;
+  color: #0f172a;
 }
 
 .hash-span {

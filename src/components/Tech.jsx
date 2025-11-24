@@ -41,7 +41,7 @@ const Tech = () => {
               />
             </div>
           )} */}
-          <div className='text-center text-white mt-2'>{technology.name}</div>
+          <div className='text-center text-slate-900 mt-2'>{technology.name}</div>
         </div>
       ))}
     </div>

@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import Typewriter from "./Typewriter";
 
 const Hero = () => {
   return (
@@ -15,12 +16,15 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Dhana Ranjitha </span>
+          <h1 className={styles.heroHeadText}>
+            Hi, I'm{" "}
+            <span className="text-[#915EFF]">
+              <Typewriter text="Dhana Ranjitha" speed={120} loop={true} />
+            </span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <p className={`${styles.heroSubText} mt-2 text-slate-600`}>
             a Generative AI Engineer Building LLM, RAG,<br className="sm:block hidden" />
-  Chatbot And Voicebot AI Solutions.
+            Chatbot And Voicebot AI Solutions.
           </p>
         </div>
       </div>
