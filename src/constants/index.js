@@ -80,7 +80,7 @@ const technologies = [
     icon: html,
   },
     {
-    name: "Machine Learning/Deep Learning",
+    name: "ML/DL",
     icon: html,
   },
   {
@@ -120,7 +120,7 @@ const technologies = [
     icon: html,
   },
   {
-    name: "Cloud Services (AWS/Azure/GCP)",
+    name: "Cloud Services(AWS/GCP)",
     icon: html,
   },
   {
