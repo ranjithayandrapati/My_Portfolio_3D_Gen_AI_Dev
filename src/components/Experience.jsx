@@ -16,10 +16,13 @@ const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#f8fafc",
+        background: "linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%)",
         color: "#0f172a",
+        padding: "2px",
+        borderRadius: "20px",
+        boxShadow: "0 0 30px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.2)",
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #e2e8f0" }}
+      contentArrowStyle={{ borderRight: "7px solid  #bf61ff" }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
@@ -32,26 +35,28 @@ const ExperienceCard = ({ experience }) => {
         </div>
       }
     >
-      <div>
-        <h3 className='text-slate-900 text-[24px] font-bold'>{experience.title}</h3>
-        <p
-          className='text-secondary text-[16px] font-semibold'
-          style={{ margin: 0 }}
-        >
-          {experience.company_name}
-        </p>
-      </div>
-
-      <ul className='mt-5 list-disc ml-5 space-y-2'>
-        {experience.points.map((point, index) => (
-          <li
-            key={`experience-point-${index}`}
-            className='text-slate-700 text-[14px] pl-1 tracking-wider'
+      <div className='bg-white rounded-[18px] p-6'>
+        <div>
+          <h3 className='text-slate-900 text-[24px] font-bold'>{experience.title}</h3>
+          <p
+            className='text-secondary text-[16px] font-semibold'
+            style={{ margin: 0 }}
           >
-            {point}
-          </li>
-        ))}
-      </ul>
+            {experience.company_name}
+          </p>
+        </div>
+
+        <ul className='mt-5 list-disc ml-5 space-y-2'>
+          {experience.points.map((point, index) => (
+            <li
+              key={`experience-point-${index}`}
+              className='text-slate-700 text-[14px] pl-1 tracking-wider'
+            >
+              {point}
+            </li>
+          ))}
+        </ul>
+      </div>
     </VerticalTimelineElement>
   );
 };
