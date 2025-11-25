@@ -95,7 +95,6 @@ Your contact form is configured in:
 - **Component**: `src/components/Contact.jsx`
 - **Environment variables**: `.env` file
   - EmailJS credentials (lines 4-6)
-  - Your name and email (lines 9-10)
 - **Security**: Your email and name are stored in `.env` and won't be exposed in your public code
 
 ## Security Benefits
