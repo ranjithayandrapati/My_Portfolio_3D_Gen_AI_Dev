@@ -46,7 +46,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-       I work as a Generative AI Engineer / Senior Software Engineer, specializing in Python, Machine Learning, Deep Learning, Large Language Models (LLMs), RAG, LangChain, Hugging Face, vector databases, C#, Unity 3D, SQL, ReactJS, and JavaScript. I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!
+       I work as a Generative AI Engineer / Software Engineer, specializing in Python, Machine Learning, Deep Learning, Large Language Models (LLMs), RAG, LangChain, Hugging Face, vector databases, C#, Unity 3D, SQL, ReactJS, and JavaScript. I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
