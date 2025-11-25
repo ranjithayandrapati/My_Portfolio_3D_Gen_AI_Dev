@@ -23,7 +23,7 @@ const Hero = () => {
             </span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-slate-600`}>
-            a Generative AI Engineer Building LLM,RAG,<br className="sm:block hidden" />
+            a Generative AI Engineer Building ,RAG,<br className="sm:block hidden" />
             Chatbot And Voicebot AI Solutions.
           </p>
         </div>
