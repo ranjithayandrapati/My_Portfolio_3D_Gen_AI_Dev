@@ -79,7 +79,7 @@ const technologies = [
     name: "Python",
     icon: html,
   },
-    {
+  {
     name: "ML/DL",
     icon: html,
   },
@@ -190,13 +190,13 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "The biggest risk is not taking any risk.",
-    name: "Mark Zuckerberg",
+      "Your limits aren’t real until you decide to stop trying.",
+    name: "Naruto Uzumaki",
   },
   {
     testimonial:
-      "I knew that if I failed I wouldn’t regret that… the one thing I might regret is not trying",
-    name: "Jeff Bezos",
+      "The biggest risk is not taking any risk.",
+    name: "Mark Zuckerberg",
   },
   {
     testimonial:
@@ -207,33 +207,33 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "PDF Search Using LLMs",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "An intelligent document search application powered by Large Language Models and LangChain. Users can upload PDF documents and perform semantic search queries to extract relevant information using RAG (Retrieval Augmented Generation) architecture with a Streamlit interface.",
     tags: [
       {
-        name: "react",
+        name: "LLM",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Streamlit",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "LangChain",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/ranjithayandrapati/PDF_Search_usingLLM",
   },
   {
-    name: "Job IT",
+    name: "VoiceBot: Movie Recommendation",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "An AI-powered voice assistant built with LLMs and LiveKit that provides personalized movie recommendations through natural voice conversations. Users can interact via voice to discover movies based on their preferences, mood, and viewing history.",
     tags: [
       {
-        name: "react",
+        name: "LLm",
         color: "blue-text-gradient",
       },
       {
@@ -241,24 +241,24 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Livekit",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/ranjithayandrapati/Mikasa-VoiceBot",
   },
   {
-    name: "Trip Guide",
+    name: "3D Portfolio",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A modern, interactive 3D portfolio website built with React.js and Three.js, featuring animated neural network background, gradient-styled cards, EmailJS contact integration, and smooth animations to showcase professional experience and projects.",
     tags: [
       {
-        name: "nextjs",
+        name: "Reactjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "MailJS",
         color: "green-text-gradient",
       },
       {
@@ -267,7 +267,7 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/ranjithayandrapati/My_Portfolio_3D_Gen_AI_Dev",
   },
 ];
 

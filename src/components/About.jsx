@@ -12,6 +12,7 @@ const ServiceCard = ({ index, title, icon }) => (
     max: 45,
     scale: 1,
     speed: 450,
+    gyroscope: false,
   }}>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
