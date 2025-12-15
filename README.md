@@ -12,7 +12,7 @@ Immersive single-page portfolio that blends React and interactive 3D scenes to s
 - Assets & Credits
 - Contact
 
-## Overview
+## Overview of project
 This project pairs React with Three.js (via React Three Fiber and Drei) to deliver a responsive, animation-rich portfolio. Sections cover an animated hero, experience, 3D skill highlights, projects, testimonials, and a contact form powered by EmailJS.
 
 ## Skills & Tools
