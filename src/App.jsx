@@ -5,6 +5,7 @@ import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, Stars
 const App = () => {
   return (
     <BrowserRouter>
+      <div className='relative'>
       <NeuralNetworkBackground />
       <div className='relative z-10'>
         <div className='bg-transparent'>
@@ -20,6 +21,7 @@ const App = () => {
           <Contact />
           <StarsCanvas />
         </div>
+      </div>
       </div>
     </BrowserRouter>
   );

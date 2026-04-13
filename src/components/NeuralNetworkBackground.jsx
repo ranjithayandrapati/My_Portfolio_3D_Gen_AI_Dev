@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 const NeuralNetworkBackground = () => {
   const canvasRef = useRef(null);
@@ -9,16 +9,17 @@ const NeuralNetworkBackground = () => {
 
     const ctx = canvas.getContext("2d");
     const nodes = [];
-    const nodeCount = 70;
-    const maxDistance = 140;
+    const isMobile = window.innerWidth < 640;
+    const maxDistance = isMobile ? 100 : 140;
 
     const randomVelocity = () => (Math.random() - 0.5) * 0.6;
 
     const resize = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
+      const count = window.innerWidth < 640 ? 30 : 70;
       nodes.length = 0;
-      for (let i = 0; i < nodeCount; i += 1) {
+      for (let i = 0; i < count; i += 1) {
         nodes.push({
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
@@ -34,17 +35,14 @@ const NeuralNetworkBackground = () => {
     const draw = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      // Move nodes
       nodes.forEach((node) => {
         node.x += node.vx;
         node.y += node.vy;
 
-        // bounce on edges
         if (node.x <= 0 || node.x >= canvas.width) node.vx *= -1;
         if (node.y <= 0 || node.y >= canvas.height) node.vy *= -1;
       });
 
-      // Draw connections
       for (let i = 0; i < nodes.length; i += 1) {
         for (let j = i + 1; j < nodes.length; j += 1) {
           const dx = nodes[i].x - nodes[j].x;
@@ -62,7 +60,6 @@ const NeuralNetworkBackground = () => {
         }
       }
 
-      // Draw nodes
       nodes.forEach((node) => {
         ctx.fillStyle = "rgba(0, 0, 0, 0.9)";
         ctx.beginPath();
@@ -73,12 +70,18 @@ const NeuralNetworkBackground = () => {
       animationFrameId = requestAnimationFrame(draw);
     };
 
-    resize();
-    draw();
+    // Wait a tick so document height is fully calculated
+    const init = () => {
+      resize();
+      draw();
+    };
+
+    const timer = setTimeout(init, 100);
 
     window.addEventListener("resize", resize);
 
     return () => {
+      clearTimeout(timer);
       window.removeEventListener("resize", resize);
       cancelAnimationFrame(animationFrameId);
     };
