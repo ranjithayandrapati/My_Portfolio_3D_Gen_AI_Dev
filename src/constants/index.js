@@ -10,7 +10,6 @@ import {
   reactjs,
   redux,
   tailwind,
-  nodejs,
   mongodb,
   git,
   figma,
@@ -25,6 +24,26 @@ import {
   threejs,
   langchain,
   llm,
+  python,
+  pytorch,
+  huggingface,
+  openai,
+  fastapi,
+  unity,
+  csharp,
+  aws,
+  vectordb,
+  elasticsearch,
+  langgraph,
+  agenticai,
+  mcp,
+  adk,
+  asr,
+  vad,
+  livekit,
+  tensorflow,
+  websocket,
+  nodejs,
   atirathgaming,
   atirath,
 } from "../assets";
@@ -74,64 +93,36 @@ const services = [
 ];
 
 const technologies = [
-
-  {
-    name: "Python",
-    icon: html,
-  },
-  {
-    name: "ML/DL",
-    icon: html,
-  },
-  {
-    name: "LangChain",
-    icon: langchain,
-  },
-  {
-    name: "Hugging Face",
-    icon: html,
-  },
-  {
-    name: "LLM",
-    icon: llm,
-  },
-  {
-    name: "RAG",
-    icon: html,
-  },
-  {
-    name: "Vector Databases",
-    icon: html,
-  },
-  {
-    name: "OpenAI",
-    icon: html,
-  },
-  {
-    name: "FastAPI",
-    icon: html,
-  },
-  {
-    name: "Unity 3D",
-    icon: html,
-  },
-  {
-    name: "C#",
-    icon: html,
-  },
-  {
-    name: "Cloud Services(AWS/GCP)",
-    icon: html,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-
-  {
-    name: "git",
-    icon: git,
-  },
+  // --- AI / LLM Core ---
+  { name: "LLM",              icon: llm },
+  { name: "OpenAI",           icon: openai },
+  { name: "LangChain",        icon: langchain },
+  { name: "LangGraph",        icon: langgraph },
+  { name: "Agentic AI",       icon: agenticai },
+  { name: "MCP Server",       icon: mcp },
+  { name: "ADK",              icon: adk },
+  { name: "Hugging Face",     icon: huggingface },
+  { name: "RAG",              icon: elasticsearch },
+  { name: "Vector Databases", icon: vectordb },
+  // --- Voice / Real-time Streaming ---
+  { name: "ASR",              icon: asr },
+  { name: "VAD",              icon: vad },
+  { name: "LiveKit",          icon: livekit },
+  { name: "WebSocket",        icon: websocket },
+  // --- ML Frameworks ---
+  { name: "ML/DL",            icon: tensorflow },
+  { name: "PyTorch",          icon: pytorch },
+  // --- Game Dev ---
+  { name: "Unity 3D",         icon: unity },
+  { name: "C#",               icon: csharp },
+  // --- Cloud & Backend ---
+  { name: "Cloud Services(AWS/GCP)", icon: aws },
+  { name: "FastAPI",          icon: fastapi },
+  // --- General Programming ---
+  { name: "Python",           icon: python },
+  { name: "Node.js",          icon: nodejs },
+  { name: "React JS",         icon: reactjs },
+  { name: "git",              icon: git },
 ];
 
 const experiences = [

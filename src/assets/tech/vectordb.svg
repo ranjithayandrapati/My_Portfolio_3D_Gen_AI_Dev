@@ -1,0 +1,13 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- Database cylinder -->
+  <ellipse cx="12" cy="5" rx="8" ry="2.5" fill="#6366f1" opacity="0.9"/>
+  <rect x="4" y="5" width="16" height="10" fill="#6366f1" opacity="0.7"/>
+  <ellipse cx="12" cy="15" rx="8" ry="2.5" fill="#6366f1" opacity="0.9"/>
+  <!-- Vector arrows inside -->
+  <line x1="7" y1="10" x2="11" y2="8" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="11,7.2 12,9.2 10,8.8" fill="white"/>
+  <line x1="9" y1="11.5" x2="14" y2="10" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="14,9.2 15.2,11 13.2,10.8" fill="white"/>
+  <line x1="11" y1="13" x2="15" y2="11.5" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="15,10.7 16.2,12.5 14.2,12.3" fill="white"/>
+</svg>

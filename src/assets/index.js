@@ -22,7 +22,27 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import langchain from "./tech/langchain.png";
-import llm from "./tech/llm.jpg";
+import llm from "./tech/llm.svg";
+
+import python from "./tech/python.svg";
+import pytorch from "./tech/pytorch.svg";
+import huggingface from "./tech/huggingface.svg";
+import openai from "./tech/openai.svg";
+import fastapi from "./tech/fastapi.svg";
+import unity from "./tech/unity.svg";
+import csharp from "./tech/csharp.svg";
+import aws from "./tech/aws.svg";
+import vectordb from "./tech/vectordb.svg";
+import elasticsearch from "./tech/elasticsearch.svg";
+import langgraph from "./tech/langgraph.svg";
+import agenticai from "./tech/agenticai.svg";
+import mcp from "./tech/mcp.svg";
+import adk from "./tech/adk.svg";
+import asr from "./tech/asr.svg";
+import vad from "./tech/vad.svg";
+import livekit from "./tech/livekit.svg";
+import tensorflow from "./tech/tensorflow.svg";
+import websocket from "./tech/websocket.svg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -68,5 +88,25 @@ export {
   tripguide,
   langchain,
   llm,
-  atirathgaming
-,  atirath,};
+  python,
+  pytorch,
+  huggingface,
+  openai,
+  fastapi,
+  unity,
+  csharp,
+  aws,
+  vectordb,
+  elasticsearch,
+  langgraph,
+  agenticai,
+  mcp,
+  adk,
+  asr,
+  vad,
+  livekit,
+  tensorflow,
+  websocket,
+  atirathgaming,
+  atirath,
+};
