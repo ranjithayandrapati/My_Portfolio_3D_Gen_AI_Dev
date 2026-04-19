@@ -42,7 +42,13 @@ import asr from "./tech/asr.svg";
 import vad from "./tech/vad.svg";
 import livekit from "./tech/livekit.svg";
 import tensorflow from "./tech/tensorflow.svg";
+import genai from "./tech/genai.svg";
 import websocket from "./tech/websocket.svg";
+import sql from "./tech/sql.svg";
+import redis from "./tech/redis.svg";
+import cicd from "./tech/cicd.svg";
+import microservices from "./tech/microservices.svg";
+import nlp from "./tech/nlp.svg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -106,7 +112,13 @@ export {
   vad,
   livekit,
   tensorflow,
+  genai,
   websocket,
+  sql,
+  redis,
+  cicd,
+  microservices,
+  nlp,
   atirathgaming,
   atirath,
 };

@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { HiMenu, HiX } from "react-icons/hi";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { logo } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -21,19 +22,17 @@ const Navbar = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <nav
-      className={`${
-        styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
+      className={`${styles.paddingX} w-full flex items-center py-4 fixed top-0 z-20 ${
         scrolled ? "bg-white shadow-md" : "bg-white/70 backdrop-blur"
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
+        {/* Logo + name */}
         <Link
           to='/'
           className='flex items-center gap-2'
@@ -42,13 +41,18 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-slate-900 text-[18px] font-bold cursor-pointer flex '>
-            Dhanaranjitha &nbsp;
-            <span className='sm:block hidden'> | Gen AI Engineer</span>
-          </p>
+          <img src={logo} alt='logo' className='w-8 h-8 object-contain' />
+          <div className='flex flex-col leading-tight'>
+            <p className='text-slate-900 text-[15px] sm:text-[18px] font-bold cursor-pointer'>
+              Dhanaranjitha
+            </p>
+            <span className='text-[#915EFF] text-[10px] sm:text-[12px] font-medium'>
+              Gen AI Engineer
+            </span>
+          </div>
         </Link>
 
+        {/* Desktop nav links */}
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((nav) => (
             <li
@@ -63,28 +67,34 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
-          <img
-            src={toggle ? close : menu}
-            alt='menu'
-            className='w-[28px] h-[28px] object-contain'
+        {/* Mobile hamburger */}
+        <div className='sm:hidden flex items-center'>
+          <button
             onClick={() => setToggle(!toggle)}
-          />
+            aria-label="Toggle menu"
+            className="p-1"
+          >
+            {toggle
+              ? <HiX className="text-slate-900 text-[26px]" />
+              : <HiMenu className="text-slate-900 text-[26px]" />
+            }
+          </button>
 
+          {/* Mobile dropdown */}
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 bg-white shadow-lg absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            } p-6 bg-white shadow-xl border border-slate-100 absolute top-16 right-4 min-w-[160px] z-30 rounded-xl`}
           >
-            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
+            <ul className='list-none flex flex-col gap-4 w-full'>
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-slate-900" : "text-secondary"
-                  }`}
+                  className={`font-medium cursor-pointer text-[16px] ${
+                    active === nav.title ? "text-[#915EFF]" : "text-slate-700"
+                  } hover:text-[#915EFF] transition-colors`}
                   onClick={() => {
-                    setToggle(!toggle);
+                    setToggle(false);
                     setActive(nav.title);
                   }}
                 >

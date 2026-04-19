@@ -1,0 +1,19 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="12" cy="12" r="11" fill="#0f172a"/>
+  <!-- Central hub -->
+  <circle cx="12" cy="12" r="2.2" fill="#f97316"/>
+  <!-- Service nodes -->
+  <circle cx="12" cy="4"  r="1.5" fill="#fb923c"/>
+  <circle cx="19" cy="8"  r="1.5" fill="#fb923c"/>
+  <circle cx="19" cy="16" r="1.5" fill="#fb923c"/>
+  <circle cx="12" cy="20" r="1.5" fill="#fb923c"/>
+  <circle cx="5"  cy="16" r="1.5" fill="#fb923c"/>
+  <circle cx="5"  cy="8"  r="1.5" fill="#fb923c"/>
+  <!-- Connection lines hub to nodes -->
+  <line x1="12" y1="9.8"  x2="12" y2="5.5"  stroke="#fdba74" stroke-width="0.9"/>
+  <line x1="13.9" y1="10.7" x2="17.7" y2="8.8"  stroke="#fdba74" stroke-width="0.9"/>
+  <line x1="13.9" y1="13.3" x2="17.7" y2="15.2" stroke="#fdba74" stroke-width="0.9"/>
+  <line x1="12" y1="14.2" x2="12" y2="18.5" stroke="#fdba74" stroke-width="0.9"/>
+  <line x1="10.1" y1="13.3" x2="6.3"  y2="15.2" stroke="#fdba74" stroke-width="0.9"/>
+  <line x1="10.1" y1="10.7" x2="6.3"  y2="8.8"  stroke="#fdba74" stroke-width="0.9"/>
+</svg>

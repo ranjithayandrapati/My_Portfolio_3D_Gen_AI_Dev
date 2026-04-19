@@ -10,6 +10,7 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+build
 *.local
 
 # Editor directories and files
@@ -24,9 +25,11 @@ dist-ssr
 *.sw?
 
 .env
+.env.*
 
-# Personal photo
+# Personal files
 src/assets/Dhanaranjitha_Photo.png
+src/assets/DHANARANJITHA.pdf
 
 # vscode
 .vscode

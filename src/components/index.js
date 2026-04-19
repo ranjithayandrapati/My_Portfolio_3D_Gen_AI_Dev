@@ -9,7 +9,7 @@ import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 import NeuralNetworkBackground from "./NeuralNetworkBackground";
-
+import Footer from "./Footer";
 
 export {
   Hero,
@@ -22,8 +22,9 @@ export {
   Contact,
   CanvasLoader,
   NeuralNetworkBackground,
-  EarthCanvas, 
-  BallCanvas, 
-  ComputersCanvas, 
-  StarsCanvas
+  EarthCanvas,
+  BallCanvas,
+  ComputersCanvas,
+  StarsCanvas,
+  Footer,
 };

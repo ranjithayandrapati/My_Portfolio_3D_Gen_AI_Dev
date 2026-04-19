@@ -25,7 +25,7 @@ const ProjectCard = ({
           speed: 450,
           gyroscope: false,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-tertiary p-4 sm:p-5 rounded-2xl sm:w-[360px] w-full'
       >
         {/* <div className='relative w-full h-[230px]'>
           <img
@@ -49,7 +49,7 @@ const ProjectCard = ({
         </div> */}
 
         <div className='flex justify-between items-start'>
-          <h3 className='text-slate-900 font-bold text-[24px]'>{name}</h3>
+          <h3 className='text-slate-900 font-bold text-[18px] sm:text-[24px]'>{name}</h3>
           <div
             onClick={() => window.open(source_code_link, "_blank")}
             className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
@@ -102,7 +102,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7'>
+      <div className='mt-10 sm:mt-20 flex flex-wrap gap-5 sm:gap-7 justify-center sm:justify-start'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

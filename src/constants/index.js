@@ -42,7 +42,13 @@ import {
   vad,
   livekit,
   tensorflow,
+  genai,
   websocket,
+  sql,
+  redis,
+  cicd,
+  microservices,
+  nlp,
   nodejs,
   atirathgaming,
   atirath,
@@ -60,6 +66,10 @@ export const navLinks = [
     title: "Work",
   },
   {
+    id: "skills",
+    title: "Skills",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -68,47 +78,61 @@ export const navLinks = [
 const services = [
   {
     title: "Generative AI Engineer",
-    icon: web,
+    icon: genai,
   },
   {
     title: "Large Language Model (LLM) Specialist",
-    icon: mobile,
+    icon: llm,
   },
   {
     title: "RAG & Agentic Systems Architect",
-    icon: backend,
+    icon: agenticai,
+  },
+  {
+    title: "AI Automation Expert",
+    icon: adk,
+  },
+  {
+    title: "Voice AI & Speech Systems",
+    icon: asr,
   },
   {
     title: "Full-Stack AI / ML Engineer",
-    icon: creator,
+    icon: python,
   },
   {
     title: "Unity 3D + AI Developer",
-    icon: creator,
+    icon: unity,
   },
   {
     title: "AI Technical Content Creator",
-    icon: creator,
+    icon: nlp,
   },
 ];
 
 const technologies = [
   // --- AI / LLM Core ---
-  { name: "LLM",              icon: llm },
-  { name: "OpenAI",           icon: openai },
+   { name: "Python",           icon: python },
   { name: "LangChain",        icon: langchain },
   { name: "LangGraph",        icon: langgraph },
   { name: "Agentic AI",       icon: agenticai },
   { name: "MCP Server",       icon: mcp },
   { name: "ADK",              icon: adk },
+   { name: "LLM",              icon: llm },
+    { name: "RAG",              icon: elasticsearch },
+      { name: "Vector Databases", icon: vectordb },
+       { name: "Redis",            icon: redis },
+         { name: "SQL",              icon: sql },
   { name: "Hugging Face",     icon: huggingface },
-  { name: "RAG",              icon: elasticsearch },
-  { name: "Vector Databases", icon: vectordb },
+  { name: "OpenAI",           icon: openai },
+  { name: "NLP",              icon: nlp },
+  { name: "FastAPI",          icon: fastapi },
   // --- Voice / Real-time Streaming ---
+   { name: "WebSocket",        icon: websocket },
   { name: "ASR",              icon: asr },
   { name: "VAD",              icon: vad },
   { name: "LiveKit",          icon: livekit },
-  { name: "WebSocket",        icon: websocket },
+ 
   // --- ML Frameworks ---
   { name: "ML/DL",            icon: tensorflow },
   { name: "PyTorch",          icon: pytorch },
@@ -117,9 +141,12 @@ const technologies = [
   { name: "C#",               icon: csharp },
   // --- Cloud & Backend ---
   { name: "Cloud Services(AWS/GCP)", icon: aws },
-  { name: "FastAPI",          icon: fastapi },
+  { name: "Microservices",    icon: microservices },
+  { name: "CI/CD",            icon: cicd },
+ 
+
   // --- General Programming ---
-  { name: "Python",           icon: python },
+
   { name: "Node.js",          icon: nodejs },
   { name: "React JS",         icon: reactjs },
   { name: "git",              icon: git },
