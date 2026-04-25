@@ -34,7 +34,7 @@ const Footer = () => {
             <a href="https://github.com/ranjithayandrapati" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <FaGithub className="text-slate-500 hover:text-[#915EFF] text-[20px] transition-colors duration-200" />
             </a>
-            <a href="https://www.linkedin.com/in/dhana-ranjitha-yandrapati-2645a018a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/dhanaranjitha-yandrapati-2645a018a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <FaLinkedin className="text-slate-500 hover:text-[#915EFF] text-[20px] transition-colors duration-200" />
             </a>
             <a href="https://www.instagram.com/___miss___unkn0wn___/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">

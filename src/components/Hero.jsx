@@ -14,7 +14,7 @@ const socialLinks = [
   },
   {
     icon: FaLinkedin,
-    href: "https://www.linkedin.com/in/dhana-ranjitha-yandrapati-2645a018a",
+    href: "https://www.linkedin.com/in/dhanaranjitha-yandrapati-2645a018a",
     label: "LinkedIn",
   },
   {
